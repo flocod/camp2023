@@ -150,6 +150,10 @@ a {
 
       position: relative;
 
+      @media all and (max-width: 1000px) {
+        margin-top: 4px;
+      }
+
       .header_menu {
         width: 100%;
         display: flex;
@@ -218,6 +222,10 @@ a {
             padding-right: 17px;
             height: 40px;
             margin-right: 10px;
+
+            @media all and (max-width: 1000px) {
+              margin-right: 0px;
+            }
           }
         }
       }

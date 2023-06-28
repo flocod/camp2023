@@ -161,6 +161,11 @@ a :hover {
   margin-top: 30px;
   position: relative;
 }
+@media all and (max-width: 1000px) {
+  .main .main_struct .main_struct_container {
+    margin-top: 4px;
+  }
+}
 .main .main_struct .main_struct_container .header_menu {
   width: 100%;
   display: -webkit-box;
@@ -245,6 +250,11 @@ a :hover {
   padding-right: 17px;
   height: 40px;
   margin-right: 10px;
+}
+@media all and (max-width: 1000px) {
+  .main .main_struct .main_struct_container .header_menu .nav_site .btn_link {
+    margin-right: 0px;
+  }
 }
 .main .main_struct .main_struct_container .home_container {
   display: -webkit-box;
