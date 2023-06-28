@@ -69,6 +69,24 @@ a :hover {
   inherits: false;
   initial-value: 360deg;
 }
+.btn_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+  background: #0d57dd;
+  padding-left: 17px;
+  padding-right: 17px;
+  height: 40px;
+  margin-right: 10px;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,12 +138,296 @@ a :hover {
 .main .main_struct {
   position: relative;
   z-index: 10;
-  display: block;
-  width: 98%;
-  height: 95%;
-  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 95%;
+  height: 98%;
+  margin-top: 3vh;
+  border-radius: 20px 20px 0 0;
   border: 2px solid white;
+  border-bottom: none;
   color: white;
+}
+.main .main_struct .main_struct_container {
+  width: 95%;
+  height: 90%;
+  margin-top: 30px;
+  position: relative;
+}
+.main .main_struct .main_struct_container .header_menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .main_struct .main_struct_container .header_menu .logo {
+  width: 170px;
+}
+.main .main_struct .main_struct_container .header_menu .logo img {
+  width: 100%;
+}
+.main .main_struct .main_struct_container .header_menu .nav_site {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media all and (max-width: 1000px) {
+  .main .main_struct .main_struct_container .header_menu .nav_site {
+    background: none;
+    border: none;
+  }
+}
+.main .main_struct .main_struct_container .header_menu .nav_site .links {
+  list-style-type: none;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  margin-left: 0px !important;
+  padding-left: 0px !important;
+  position: relative;
+}
+@media all and (max-width: 1000px) {
+  .main .main_struct .main_struct_container .header_menu .nav_site .links {
+    display: none;
+  }
+}
+.main .main_struct .main_struct_container .header_menu .nav_site .links .active::after {
+  display: inline-block;
+  content: " ";
+  width: 5px;
+  height: 5px;
+  border-radius: 50px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(-100%) translateX(50%);
+          transform: translateY(-100%) translateX(50%);
+}
+.main .main_struct .main_struct_container .header_menu .nav_site .links li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.main .main_struct .main_struct_container .header_menu .nav_site .btn_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+  background: #0d57dd;
+  padding-left: 17px;
+  padding-right: 17px;
+  height: 40px;
+  margin-right: 10px;
+}
+.main .main_struct .main_struct_container .home_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+}
+@media all and (max-width: 1000px) {
+  .main .main_struct .main_struct_container .home_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+    height: auto;
+  }
+}
+.main .main_struct .main_struct_container .home_container .introduction_box {
+  width: 55%;
+}
+@media all and (max-width: 1000px) {
+  .main .main_struct .main_struct_container .home_container .introduction_box {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.main .main_struct .main_struct_container .home_container .introduction_box .text1 {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 70px;
+  font-family: Roboto;
+  font-weight: 500;
+}
+@media all and (max-width: 1451px) {
+  .main .main_struct .main_struct_container .home_container .introduction_box .text1 {
+    font-size: 4vw;
+    line-height: normal;
+  }
+}
+@media all and (max-width: 1000px) {
+  .main .main_struct .main_struct_container .home_container .introduction_box .text1 {
+    width: 100%;
+    font-size: 7vw;
+  }
+}
+.main .main_struct .main_struct_container .home_container .introduction_box .text2 {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 70px;
+  line-height: 140px;
+  font-family: Ahganirya;
+}
+@media all and (max-width: 1451px) {
+  .main .main_struct .main_struct_container .home_container .introduction_box .text2 {
+    font-size: 4vw;
+    line-height: 140px;
+  }
+}
+@media all and (max-width: 1000px) {
+  .main .main_struct .main_struct_container .home_container .introduction_box .text2 {
+    width: 100%;
+    font-family: Roboto;
+    line-height: normal;
+    font-weight: 500;
+    font-size: 7vw;
+  }
+}
+.main .main_struct .main_struct_container .home_container .introduction_box .warnn {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2392156863);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+.main .main_struct .main_struct_container .home_container .introduction_box .warnn .text_warnn {
+  width: 70%;
+  color: white;
+  font-size: 0.9em;
+}
+@media all and (max-width: 1451px) {
+  .main .main_struct .main_struct_container .home_container .introduction_box .warnn .text_warnn {
+    font-size: 0.8vw;
+    width: 65%;
+  }
+}
+@media all and (max-width: 1451px) {
+  .main .main_struct .main_struct_container .home_container .introduction_box .warnn {
+    font-size: 0.8vw;
+    width: 70%;
+  }
+  .main .main_struct .main_struct_container .home_container .introduction_box .warnn .btn_main {
+    margin-right: 0px;
+  }
+}
+.main .main_struct .main_struct_container .home_container .introduction_box .warnn .img {
+  width: 35px;
+}
+@media all and (max-width: 1000px) {
+  .main .main_struct .main_struct_container .home_container .introduction_box .warnn {
+    display: none;
+  }
+}
+.main .main_struct .main_struct_container .home_container .audio_container {
+  display: block;
+  width: 26%;
+}
+@media all and (max-width: 1000px) {
+  .main .main_struct .main_struct_container .home_container .audio_container {
+    width: 90%;
+  }
+}
+.main .main_struct .main_struct_container .home_container .audio_container .text {
+  color: #fff;
+  text-align: right;
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 40px;
+  font-family: Roboto;
+  font-weight: 300;
+  line-height: 52px;
+}
+@media all and (max-width: 1669px) {
+  .main .main_struct .main_struct_container .home_container .audio_container .text {
+    font-size: 2vw;
+    line-height: normal;
+  }
+}
+@media all and (max-width: 1000px) {
+  .main .main_struct .main_struct_container .home_container .audio_container .text {
+    text-align: left;
+    font-size: 2em;
+    line-height: normal;
+  }
+}
+.main .main_struct .main_struct_container .home_container .audio_container .block_audio {
+  margin-top: 30px;
+  width: 100%;
+}
+@media all and (max-width: 1000px) {
+  .main .main_struct .main_struct_container .home_container .audio_container .block_audio {
+    margin-top: 15px;
+  }
+}
+.main .main_struct .main_struct_container .home_container .audio_container .block_audio .audio {
+  margin-top: 10px;
+}
+.main .main_struct .main_struct_container .home_container .audio_container .block_audio .audio iframe {
+  border-radius: 10px;
+}
+.main .main_struct .main_struct_container .home_container .audio_container .block_audio .audio:nth-child(2n) {
+  -webkit-transform: translateX(-7%);
+          transform: translateX(-7%);
+}
+@media all and (max-width: 1000px) {
+  .main .main_struct .main_struct_container .home_container .audio_container .block_audio .audio:nth-child(2n) {
+    -webkit-transform: translateX(7%);
+            transform: translateX(7%);
+  }
 }
 .main .nom {
   width: 90%;
